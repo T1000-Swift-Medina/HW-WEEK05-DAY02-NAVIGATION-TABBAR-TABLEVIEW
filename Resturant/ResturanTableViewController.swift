@@ -6,19 +6,28 @@
 //
 
 import UIKit
-class ResturanTableViewController: UITableViewController {
-    
-    var menuArry = ["10 piece chicken Nuggets", "4 piece chicken " , "Big Baik whith cheese"]
-    
-    var descArry = ["crunchy to perfection. incloud a bun , frise and 2 nuggets sauces." , "crunchy to perfection. incloud a buns , frise and 2 garlic sauces.", "aginormous chicken fillet breast sandwich with coleslaw , pickles and our special sause , cheese"]
-    
-    var costArry = ["15 SR" , "29 SR" , "13 SR"]
-    
-    var logoImages = [UIImage(named: "nuggest") , UIImage(named: "broost") , UIImage(named: "bigBaik")]
 
+struct Product{
+    var title : String
+    var detalis : String
+    var cost : Double
+    var imageProduct : UIImage
+}
+struct ProductList {
+    var items: [Product] = []
+    
+    mutating func addItem (newItem : Product) {
+        items.append(newItem)
+    }
+}
+
+
+class ResturanTableViewController: UITableViewController {
+    var item = ProductList(items: [Product(title: "10 piece chicken Nuggets", detalis: "crunchy to perfection. incloud a bun , frise and 2 nuggets sauces." , cost: 15.00 , imageProduct: UIImage(named: "nuggest")!)])
+  
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        item.addItem(newItem: Product(title: "ALBAIK 4 Piece Chicken Meal", detalis: "crunchy to perfection includes a bun , fries and 2 garlic sauces", cost: 15.00 , imageProduct:UIImage(named: "broost")!))
         
         tableView.register(UINib(nibName: "prodectCell", bundle: nil), forCellReuseIdentifier: "itemCell")
         tableView.register(UINib(nibName: "BannerTableViewCell", bundle: nil), forCellReuseIdentifier: "BannerCell")
@@ -44,26 +53,26 @@ class ResturanTableViewController: UITableViewController {
         // #warning Incomplete implementation, return the number of rows
         if section == 0 {
             return 1
-        } else {
-            return menuArry.count
-        }
+        }else{
+        return item.items.count
+    
     }
-
+    }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
 //        let cell : UITableViewCell!
         if (indexPath.section == 0) {
-            
              let cell = tableView.dequeueReusableCell(withIdentifier: "BannerCell", for: indexPath) as! BannerTableViewCell
             return cell
-
         } else {
-         let cell = tableView.dequeueReusableCell(withIdentifier: "itemCell", for: indexPath) as! prodectCell
-            cell.title.text = menuArry[indexPath.row]
-            cell.details.text = descArry[indexPath.row]
-            cell.cost.text = costArry [indexPath.row]
-            cell.image1.image = logoImages [indexPath.row]
-            return cell
+         let cellProduct = tableView.dequeueReusableCell(withIdentifier: "itemCell", for: indexPath) as! prodectCell
+    
+            cellProduct.title.text = item.items[indexPath.row].title
+            cellProduct.details.text = item.items[indexPath.row].detalis
+            cellProduct.cost.text = String(item.items[indexPath.row].cost)
+            cellProduct.image1.image = item.items[indexPath.row].imageProduct
+            
+            return cellProduct
 
         // Configure the cell...
     }
