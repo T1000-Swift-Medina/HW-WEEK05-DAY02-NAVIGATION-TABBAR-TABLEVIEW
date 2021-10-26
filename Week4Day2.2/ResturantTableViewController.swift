@@ -59,7 +59,7 @@ class ResturantTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
 //        var cell : Any = 0
         
-        if indexPath.row == 0 {
+        if indexPath.section == 0 {
          let  cell  = tableView.dequeueReusableCell(withIdentifier:  "imageCell", for: indexPath)
             
             return cell
