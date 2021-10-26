@@ -13,6 +13,11 @@
 		43D2150627281CB90063EE7E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 43D2150427281CB90063EE7E /* Main.storyboard */; };
 		43D2150827281CBA0063EE7E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 43D2150727281CBA0063EE7E /* Assets.xcassets */; };
 		43D2150B27281CBA0063EE7E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 43D2150927281CBA0063EE7E /* LaunchScreen.storyboard */; };
+		43D2151727281CD90063EE7E /* BannerCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43D2151227281CD90063EE7E /* BannerCellTableViewCell.swift */; };
+		43D2151827281CD90063EE7E /* Restraunat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43D2151327281CD90063EE7E /* Restraunat.swift */; };
+		43D2151927281CD90063EE7E /* BannerCellTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 43D2151427281CD90063EE7E /* BannerCellTableViewCell.xib */; };
+		43D2151A27281CD90063EE7E /* ProuductCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43D2151527281CD90063EE7E /* ProuductCell.swift */; };
+		43D2151B27281CD90063EE7E /* ProuductCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 43D2151627281CD90063EE7E /* ProuductCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +29,11 @@
 		43D2150727281CBA0063EE7E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		43D2150A27281CBA0063EE7E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		43D2150C27281CBA0063EE7E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		43D2151227281CD90063EE7E /* BannerCellTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BannerCellTableViewCell.swift; sourceTree = "<group>"; };
+		43D2151327281CD90063EE7E /* Restraunat.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Restraunat.swift; sourceTree = "<group>"; };
+		43D2151427281CD90063EE7E /* BannerCellTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BannerCellTableViewCell.xib; sourceTree = "<group>"; };
+		43D2151527281CD90063EE7E /* ProuductCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProuductCell.swift; sourceTree = "<group>"; };
+		43D2151627281CD90063EE7E /* ProuductCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProuductCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +73,11 @@
 				43D2150727281CBA0063EE7E /* Assets.xcassets */,
 				43D2150927281CBA0063EE7E /* LaunchScreen.storyboard */,
 				43D2150C27281CBA0063EE7E /* Info.plist */,
+				43D2151227281CD90063EE7E /* BannerCellTableViewCell.swift */,
+				43D2151427281CD90063EE7E /* BannerCellTableViewCell.xib */,
+				43D2151527281CD90063EE7E /* ProuductCell.swift */,
+				43D2151627281CD90063EE7E /* ProuductCell.xib */,
+				43D2151327281CD90063EE7E /* Restraunat.swift */,
 			);
 			path = AlBaik;
 			sourceTree = "<group>";
@@ -125,7 +140,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				43D2151B27281CD90063EE7E /* ProuductCell.xib in Resources */,
 				43D2150B27281CBA0063EE7E /* LaunchScreen.storyboard in Resources */,
+				43D2151927281CD90063EE7E /* BannerCellTableViewCell.xib in Resources */,
 				43D2150827281CBA0063EE7E /* Assets.xcassets in Resources */,
 				43D2150627281CB90063EE7E /* Main.storyboard in Resources */,
 			);
@@ -139,6 +156,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				43D2150327281CB90063EE7E /* ViewController.swift in Sources */,
+				43D2151827281CD90063EE7E /* Restraunat.swift in Sources */,
+				43D2151727281CD90063EE7E /* BannerCellTableViewCell.swift in Sources */,
+				43D2151A27281CD90063EE7E /* ProuductCell.swift in Sources */,
 				43D214FF27281CB90063EE7E /* AppDelegate.swift in Sources */,
 				43D2150127281CB90063EE7E /* SceneDelegate.swift in Sources */,
 			);
