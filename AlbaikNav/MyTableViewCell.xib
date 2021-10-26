@@ -23,16 +23,10 @@
                             <constraint firstAttribute="height" constant="107" id="Qz5-rg-AjM"/>
                         </constraints>
                     </imageView>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Burger" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e44-Wf-WWZ">
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="752" text="Burger" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e44-Wf-WWZ">
                         <rect key="frame" x="156" y="17" width="59" height="24"/>
                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                         <nil key="textColor"/>
-                        <nil key="highlightedColor"/>
-                    </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Delicious and tasty with cheese" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s8y-mA-KTz">
-                        <rect key="frame" x="156" y="60" width="239.5" height="20.5"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                        <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cost 50.00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lhh-Uy-e3M">
@@ -41,8 +35,8 @@
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="751" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8cq-ja-ErZ">
-                        <rect key="frame" x="340" y="13.5" width="100" height="31"/>
+                    <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8cq-ja-ErZ">
+                        <rect key="frame" x="335" y="98" width="100" height="31"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="31" id="3IL-sO-iot"/>
                             <constraint firstAttribute="width" constant="100" id="eOT-vd-afB"/>
@@ -53,22 +47,40 @@
                             <fontDescription key="titleFontDescription" type="system" pointSize="15"/>
                             <color key="baseBackgroundColor" red="1" green="0.83234566450000003" blue="0.47320586440000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         </buttonConfiguration>
+                        <connections>
+                            <action selector="onPress:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="cMa-K6-q8c"/>
+                        </connections>
                     </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Delicious and tasty with cheese" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s8y-mA-KTz">
+                        <rect key="frame" x="156" y="49" width="250" height="20.5"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="250" id="Sdr-k8-L4Y"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
                 </subviews>
                 <constraints>
-                    <constraint firstItem="s8y-mA-KTz" firstAttribute="top" secondItem="e44-Wf-WWZ" secondAttribute="bottom" constant="19" id="970-q6-fyz"/>
+                    <constraint firstItem="s8y-mA-KTz" firstAttribute="top" secondItem="e44-Wf-WWZ" secondAttribute="bottom" constant="8" id="970-q6-fyz"/>
                     <constraint firstItem="Lhh-Uy-e3M" firstAttribute="leading" secondItem="s8y-mA-KTz" secondAttribute="leading" id="Cdk-Xp-NSy"/>
                     <constraint firstItem="s8y-mA-KTz" firstAttribute="leading" secondItem="e44-Wf-WWZ" secondAttribute="leading" id="EMJ-4D-d19"/>
-                    <constraint firstAttribute="trailing" secondItem="8cq-ja-ErZ" secondAttribute="trailing" constant="30" id="MKv-Hl-TLE"/>
+                    <constraint firstAttribute="trailing" secondItem="8cq-ja-ErZ" secondAttribute="trailing" constant="35" id="MKv-Hl-TLE"/>
                     <constraint firstItem="eLe-Kn-WK4" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="MdZ-my-d33"/>
                     <constraint firstAttribute="bottom" secondItem="Lhh-Uy-e3M" secondAttribute="bottom" constant="16" id="Tu0-Bm-wJj"/>
                     <constraint firstItem="e44-Wf-WWZ" firstAttribute="leading" secondItem="eLe-Kn-WK4" secondAttribute="trailing" constant="29" id="dhy-mo-e8A"/>
                     <constraint firstItem="eLe-Kn-WK4" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" symbolic="YES" id="hb7-VM-dGZ"/>
-                    <constraint firstItem="8cq-ja-ErZ" firstAttribute="centerY" secondItem="e44-Wf-WWZ" secondAttribute="centerY" id="pbW-cP-2hz"/>
+                    <constraint firstItem="8cq-ja-ErZ" firstAttribute="centerY" secondItem="e44-Wf-WWZ" secondAttribute="centerY" constant="84.5" id="pbW-cP-2hz"/>
                     <constraint firstItem="e44-Wf-WWZ" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="17" id="xqP-qB-9KR"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="Description" destination="s8y-mA-KTz" id="JDs-9P-NrK"/>
+                <outlet property="cost" destination="Lhh-Uy-e3M" id="5F8-f5-VXt"/>
+                <outlet property="images" destination="eLe-Kn-WK4" id="SVi-dL-aPh"/>
+                <outlet property="title" destination="e44-Wf-WWZ" id="Ja9-3a-X7u"/>
+            </connections>
             <point key="canvasLocation" x="-104.34782608695653" y="-38.839285714285715"/>
         </tableViewCell>
     </objects>

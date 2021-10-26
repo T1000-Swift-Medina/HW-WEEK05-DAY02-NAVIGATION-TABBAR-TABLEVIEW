@@ -7,8 +7,39 @@
 
 import UIKit
 
-class ResturantTableViewController: UITableViewController {
+struct Product {
+    var title : String = ""
+    var Description : String = ""
+    var cost : Double = 0
+    var images : UIImage
+}
 
+
+
+class ResturantTableViewController: UITableViewController {
+    
+    
+    
+    var items : [Product] = [Product (title: "Nuggets",
+                                      Description: "Delicious Crispy and contains 8 pieces",
+                                      cost: 22.0 ,
+                                      images: UIImage(named: "Nuggets")!),
+                             Product (title: "Burger",
+                                      Description: "Delicious and tasty with cheese",
+                                      cost: 20.0,
+                                      images: UIImage(named: "burger-1")!),
+                             Product (title: "Chicken Fillet Sandwich",
+                                      Description: "Boneless chicken wrapped in Arabic bread",
+                                      cost: 7.0,
+                                      images: UIImage(named: "Sandwich")!),
+                             Product (title: "Big Baik",
+                                      Description: "chicken breast fillet sandwich with coleslaw and special albaik sauce.",
+                                      cost: 13.50,
+                                      images: UIImage(named: "bigBaik")!)
+    ]
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.register(UINib(nibName: "Banner", bundle: nil), forCellReuseIdentifier: "BannerID")
@@ -28,12 +59,17 @@ class ResturantTableViewController: UITableViewController {
 
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 1
+        return 2
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 10
+//        return items.count + 1
+        if section == 0 {
+            return 1
+        }else{
+            return items.count
+        }
     }
 
     
@@ -41,15 +77,24 @@ class ResturantTableViewController: UITableViewController {
 //        let cell = tableView.dequeueReusableCell(withIdentifier: "ItemCell", for: indexPath)
 //
 //        // Configure the cell...
-        if indexPath.row == 0 {
+        
+        
+        
+        
+        if (indexPath.section == 0) {
             
-        let cell =
+        let cellBanner =
         tableView.dequeueReusableCell(withIdentifier: "BannerID") as!Banner
-        return cell
+        return cellBanner
         }else{
-            let cell =
+            let cellProduct =
             tableView.dequeueReusableCell(withIdentifier: "ItemCell") as! MyTableViewCell
-            return cell
+            cellProduct.title.text = items[indexPath.row].title
+            cellProduct.Description.text = items[indexPath.row].Description
+            cellProduct.cost.text = String(items[indexPath.row].cost)
+            cellProduct.images.image = items[indexPath.row].images
+           
+            return cellProduct
         }
     
 

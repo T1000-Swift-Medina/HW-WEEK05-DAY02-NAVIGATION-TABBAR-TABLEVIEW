@@ -9,6 +9,12 @@ import UIKit
 
 class MyTableViewCell: UITableViewCell {
 
+    @IBAction func onPress(_ sender: Any) {
+    }
+    @IBOutlet weak var cost: UILabel!
+    @IBOutlet weak var Description: UILabel!
+    @IBOutlet weak var title: UILabel!
+    @IBOutlet weak var images: UIImageView!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
