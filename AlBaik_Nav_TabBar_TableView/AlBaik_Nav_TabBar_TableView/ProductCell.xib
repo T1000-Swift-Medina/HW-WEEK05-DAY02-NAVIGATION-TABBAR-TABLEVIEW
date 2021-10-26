@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ProductID" rowHeight="180" id="KGk-i7-Jjw" customClass="ProductCell" customModule="AlBaik_Nav_TabBar_TableView" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="379" height="137"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="379" height="137"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Burgar" translatesAutoresizingMaskIntoConstraints="NO" id="6EC-lI-vz6">
+                        <rect key="frame" x="16" y="28.5" width="80" height="80"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="80" id="2mQ-jp-ElX"/>
+                            <constraint firstAttribute="height" constant="80" id="pW9-zO-ee5"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lqZ-uP-UnD">
+                        <rect key="frame" x="106" y="17" width="253" height="21"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="All people look very energetic an actrive  ;alksdjfa;lsjfdsjf;sdjf;s" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zna-Yf-G2J">
+                        <rect key="frame" x="106" y="47" width="253" height="41"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" systemColor="systemGray2Color"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cost" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RvK-DT-NaK">
+                        <rect key="frame" x="106" y="98" width="144" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="144" id="gRf-a9-HJh"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wPF-J3-sxr">
+                        <rect key="frame" x="258" y="93" width="101" height="31"/>
+                        <state key="normal" title="Button"/>
+                        <buttonConfiguration key="configuration" style="tinted" title="Add To Cart"/>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="Zna-Yf-G2J" secondAttribute="trailing" constant="20" id="0zH-Gu-69X"/>
+                    <constraint firstItem="Zna-Yf-G2J" firstAttribute="top" secondItem="lqZ-uP-UnD" secondAttribute="bottom" constant="9" id="LfX-RT-KIv"/>
+                    <constraint firstItem="lqZ-uP-UnD" firstAttribute="leading" secondItem="6EC-lI-vz6" secondAttribute="trailing" constant="10" id="Wqm-Y9-09O"/>
+                    <constraint firstItem="RvK-DT-NaK" firstAttribute="top" secondItem="Zna-Yf-G2J" secondAttribute="bottom" constant="10" id="bP1-0p-NMb"/>
+                    <constraint firstItem="Zna-Yf-G2J" firstAttribute="leading" secondItem="lqZ-uP-UnD" secondAttribute="leading" id="eP5-T8-Alo"/>
+                    <constraint firstAttribute="bottom" secondItem="wPF-J3-sxr" secondAttribute="bottom" constant="13" id="fw5-xf-gV1"/>
+                    <constraint firstItem="wPF-J3-sxr" firstAttribute="centerY" secondItem="RvK-DT-NaK" secondAttribute="centerY" id="h6O-Yd-Ha5"/>
+                    <constraint firstItem="lqZ-uP-UnD" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="17" id="kUx-x1-MPR"/>
+                    <constraint firstAttribute="trailing" secondItem="wPF-J3-sxr" secondAttribute="trailing" constant="20" symbolic="YES" id="lnI-I6-W2Y"/>
+                    <constraint firstItem="RvK-DT-NaK" firstAttribute="leading" secondItem="Zna-Yf-G2J" secondAttribute="leading" id="ou0-1l-Btr"/>
+                    <constraint firstAttribute="trailing" secondItem="lqZ-uP-UnD" secondAttribute="trailing" constant="20" id="sHT-bV-2Ok"/>
+                    <constraint firstItem="6EC-lI-vz6" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="sgQ-NF-nUz"/>
+                    <constraint firstItem="6EC-lI-vz6" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="vWE-QW-tFH"/>
+                    <constraint firstItem="Zna-Yf-G2J" firstAttribute="trailing" secondItem="lqZ-uP-UnD" secondAttribute="trailing" id="xDr-KW-Mlt"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="btnAddToCart" destination="wPF-J3-sxr" id="Puy-cq-h6o"/>
+                <outlet property="imgProduct" destination="6EC-lI-vz6" id="AIu-IF-aiq"/>
+                <outlet property="lblCost" destination="RvK-DT-NaK" id="qoW-fq-qTJ"/>
+                <outlet property="lblDescription" destination="Zna-Yf-G2J" id="Iiu-80-LXN"/>
+                <outlet property="lblTitle" destination="lqZ-uP-UnD" id="6LY-mf-M2y"/>
+            </connections>
+            <point key="canvasLocation" x="186.23188405797103" y="153.01339285714286"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="Burgar" width="300" height="168.5"/>
+        <systemColor name="systemGray2Color">
+            <color red="0.68235294117647061" green="0.68235294117647061" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
