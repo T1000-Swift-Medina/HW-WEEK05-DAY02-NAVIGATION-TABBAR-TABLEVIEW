@@ -6,8 +6,15 @@
 //
 
 import UIKit
-
 class ResturanTableViewController: UITableViewController {
+    
+    var menuArry = ["10 piece chicken Nuggets", "4 piece chicken " , "Big Baik whith cheese"]
+    
+    var descArry = ["crunchy to perfection. incloud a bun , frise and 2 nuggets sauces." , "crunchy to perfection. incloud a buns , frise and 2 garlic sauces.", "aginormous chicken fillet breast sandwich with coleslaw , pickles and our special sause , cheese"]
+    
+    var costArry = ["15 SR" , "29 SR" , "13 SR"]
+    
+    var logoImages = [UIImage(named: "nuggest") , UIImage(named: "broost") , UIImage(named: "bigBaik")]
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,27 +34,35 @@ class ResturanTableViewController: UITableViewController {
 
     // MARK: - Table view data source
 
+//    @IBOutlet var menuTable: UITableView!
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 1
+        return 2
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 10
+        if section == 0 {
+            return 1
+        } else {
+            return menuArry.count
+        }
     }
 
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
 //        let cell : UITableViewCell!
-        if(indexPath.row == 0){
+        if (indexPath.section == 0) {
             
              let cell = tableView.dequeueReusableCell(withIdentifier: "BannerCell", for: indexPath) as! BannerTableViewCell
-           
             return cell
 
-        }else{
+        } else {
          let cell = tableView.dequeueReusableCell(withIdentifier: "itemCell", for: indexPath) as! prodectCell
+            cell.title.text = menuArry[indexPath.row]
+            cell.details.text = descArry[indexPath.row]
+            cell.cost.text = costArry [indexPath.row]
+            cell.image1.image = logoImages [indexPath.row]
             return cell
 
         // Configure the cell...
