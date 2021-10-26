@@ -14,6 +14,11 @@
 		C335F58427273E6600A8FEA7 /* AlbaikHomework.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C335F58227273E6600A8FEA7 /* AlbaikHomework.xcdatamodeld */; };
 		C335F58627273E6C00A8FEA7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C335F58527273E6C00A8FEA7 /* Assets.xcassets */; };
 		C335F58927273E6C00A8FEA7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C335F58727273E6C00A8FEA7 /* LaunchScreen.storyboard */; };
+		C335F5C32727F0B100A8FEA7 /* Cells.swift in Sources */ = {isa = PBXBuildFile; fileRef = C335F5C12727F0B100A8FEA7 /* Cells.swift */; };
+		C335F5C42727F0B100A8FEA7 /* Cells.xib in Resources */ = {isa = PBXBuildFile; fileRef = C335F5C22727F0B100A8FEA7 /* Cells.xib */; };
+		C335F5C72727F0CB00A8FEA7 /* Banner.swift in Sources */ = {isa = PBXBuildFile; fileRef = C335F5C52727F0CB00A8FEA7 /* Banner.swift */; };
+		C335F5C82727F0CC00A8FEA7 /* Banner.xib in Resources */ = {isa = PBXBuildFile; fileRef = C335F5C62727F0CB00A8FEA7 /* Banner.xib */; };
+		C335F5CA2727F8F500A8FEA7 /* TableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C335F5C92727F8F500A8FEA7 /* TableView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +31,11 @@
 		C335F58527273E6C00A8FEA7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C335F58827273E6C00A8FEA7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C335F58A27273E6C00A8FEA7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C335F5C12727F0B100A8FEA7 /* Cells.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cells.swift; sourceTree = "<group>"; };
+		C335F5C22727F0B100A8FEA7 /* Cells.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Cells.xib; sourceTree = "<group>"; };
+		C335F5C52727F0CB00A8FEA7 /* Banner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Banner.swift; sourceTree = "<group>"; };
+		C335F5C62727F0CB00A8FEA7 /* Banner.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Banner.xib; sourceTree = "<group>"; };
+		C335F5C92727F8F500A8FEA7 /* TableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +76,11 @@
 				C335F58727273E6C00A8FEA7 /* LaunchScreen.storyboard */,
 				C335F58A27273E6C00A8FEA7 /* Info.plist */,
 				C335F58227273E6600A8FEA7 /* AlbaikHomework.xcdatamodeld */,
+				C335F5C12727F0B100A8FEA7 /* Cells.swift */,
+				C335F5C22727F0B100A8FEA7 /* Cells.xib */,
+				C335F5C52727F0CB00A8FEA7 /* Banner.swift */,
+				C335F5C62727F0CB00A8FEA7 /* Banner.xib */,
+				C335F5C92727F8F500A8FEA7 /* TableView.swift */,
 			);
 			path = AlbaikHomework;
 			sourceTree = "<group>";
@@ -129,6 +144,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				C335F58927273E6C00A8FEA7 /* LaunchScreen.storyboard in Resources */,
+				C335F5C42727F0B100A8FEA7 /* Cells.xib in Resources */,
+				C335F5C82727F0CC00A8FEA7 /* Banner.xib in Resources */,
 				C335F58627273E6C00A8FEA7 /* Assets.xcassets in Resources */,
 				C335F58127273E6600A8FEA7 /* Main.storyboard in Resources */,
 			);
@@ -144,7 +161,10 @@
 				C335F57E27273E6600A8FEA7 /* ViewController.swift in Sources */,
 				C335F57A27273E6600A8FEA7 /* AppDelegate.swift in Sources */,
 				C335F57C27273E6600A8FEA7 /* SceneDelegate.swift in Sources */,
+				C335F5CA2727F8F500A8FEA7 /* TableView.swift in Sources */,
 				C335F58427273E6600A8FEA7 /* AlbaikHomework.xcdatamodeld in Sources */,
+				C335F5C32727F0B100A8FEA7 /* Cells.swift in Sources */,
+				C335F5C72727F0CB00A8FEA7 /* Banner.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
