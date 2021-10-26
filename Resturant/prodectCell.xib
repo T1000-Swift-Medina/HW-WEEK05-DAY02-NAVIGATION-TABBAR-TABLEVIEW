@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="itemCell" rowHeight="127" id="KGk-i7-Jjw" customClass="prodectCell" customModule="Resturant" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="439" height="127"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="439" height="127"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="website-03-1-service_detail_page" translatesAutoresizingMaskIntoConstraints="NO" id="DBS-Xy-00O">
+                        <rect key="frame" x="0.0" y="0.0" width="130" height="127"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="130" id="bRi-gX-9Ok"/>
+                            <constraint firstAttribute="height" constant="127" id="dP2-LK-6Lg"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10 piece chicken Nuggets" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eG8-mg-6kU">
+                        <rect key="frame" x="176" y="18" width="233" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="cost 15 SR" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ptg-Ma-eh0">
+                        <rect key="frame" x="176" y="90" width="81" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="crunchy to perfection. incloud a bun , frise and 2 nuggets sauces." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yao-YD-jLh">
+                        <rect key="frame" x="176" y="47" width="243" height="24"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jPE-qD-G0S">
+                        <rect key="frame" x="314" y="87.5" width="108" height="26"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="108" id="f8G-Ap-G7q"/>
+                            <constraint firstAttribute="height" constant="26" id="hlc-60-fL9"/>
+                        </constraints>
+                        <state key="normal" title="Button"/>
+                        <buttonConfiguration key="configuration" style="tinted" title="Add"/>
+                    </button>
+                </subviews>
+                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="Ptg-Ma-eh0" secondAttribute="bottom" constant="16" id="00C-Me-XN0"/>
+                    <constraint firstItem="Ptg-Ma-eh0" firstAttribute="leading" secondItem="yao-YD-jLh" secondAttribute="leading" id="0GE-Ha-0YR"/>
+                    <constraint firstItem="eG8-mg-6kU" firstAttribute="leading" secondItem="DBS-Xy-00O" secondAttribute="trailing" constant="46" id="877-um-g3v"/>
+                    <constraint firstAttribute="trailing" secondItem="jPE-qD-G0S" secondAttribute="trailing" constant="17" id="Cn3-2K-vB3"/>
+                    <constraint firstItem="DBS-Xy-00O" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="X3p-Jd-HHk"/>
+                    <constraint firstAttribute="trailing" secondItem="eG8-mg-6kU" secondAttribute="trailing" constant="30" id="f73-jx-NZy"/>
+                    <constraint firstAttribute="trailing" secondItem="yao-YD-jLh" secondAttribute="trailing" constant="20" id="iMf-7p-AhK"/>
+                    <constraint firstItem="jPE-qD-G0S" firstAttribute="centerY" secondItem="Ptg-Ma-eh0" secondAttribute="centerY" id="iSY-69-kEk"/>
+                    <constraint firstItem="DBS-Xy-00O" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="kbz-fJ-e6a"/>
+                    <constraint firstItem="yao-YD-jLh" firstAttribute="top" secondItem="eG8-mg-6kU" secondAttribute="bottom" constant="8" symbolic="YES" id="oOC-XF-ons"/>
+                    <constraint firstItem="eG8-mg-6kU" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="18" id="rn1-oC-OAR"/>
+                    <constraint firstItem="yao-YD-jLh" firstAttribute="leading" secondItem="eG8-mg-6kU" secondAttribute="leading" id="yfJ-vD-Mfl"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <point key="canvasLocation" x="-60" y="102"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="website-03-1-service_detail_page" width="773" height="418"/>
+    </resources>
+</document>
