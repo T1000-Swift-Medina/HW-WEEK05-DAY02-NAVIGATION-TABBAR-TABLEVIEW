@@ -7,99 +7,86 @@
 
 import UIKit
 
-class Restraunat: UITableViewController {
+struct Product {
+    var title : String = ""
+    var Description : String = ""
+    var cost : Double = 0
+    var imges : UIImage?
+}
 
+class Restraunat: UITableViewController {
+    
+    var items : [Product] = [Product (title: "Nuggets",
+                                      Description: "Delicious Crispy and contains 8 pieces",
+                                      cost: 22.0 ,
+                                      imges: UIImage(named: "Nuggets")!),
+                             Product (title: "Burger",
+                                      Description: "Delicious and tasty with cheese",
+                                      cost: 20.0,
+                                      imges: UIImage(named: "burger")!),
+                             Product (title: "Chicken Sandwich",
+                                      Description: "Chicken with sauce and Shami bread",
+                                      cost: 7.0,
+                                      imges: UIImage(named: "Sandwich")!),
+                             Product (title: "Filt fish",
+                                      Description: "Boneless fish fillet with special flavor sause.",
+                                      cost: 13.50,
+                                      imges: UIImage(named: "filt fish")!)
+    ]
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         tableView.register(UINib(nibName:"BannerCellTableViewCell", bundle: nil), forCellReuseIdentifier: "BannerID")
         tableView.register(UINib(nibName: "ProuductCell", bundle: nil), forCellReuseIdentifier: "item")
-        tableView.rowHeight = 108 
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem
+        tableView.rowHeight = 108
     }
-
+    
     // MARK: - Table view data source
-
+    
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 1
+        return 2
     }
-
+    
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 10
+        if ( section == 0 ){
+            return 1 }
+        else{
+            return items.count
+        }
     }
-
+    
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell
     
     {
         
-        if indexPath.row == 0 {
+        if indexPath.section == 0 {
             
-       
-  let cell =  tableView.dequeueReusableCell(withIdentifier: "BannerID") as! BannerCellTableViewCell
+            
+            let cellBanner =  tableView.dequeueReusableCell(withIdentifier: "BannerID") as! BannerCellTableViewCell
+            
+            // Configure the cell...
+            
+            return cellBanner
+            
+        } else {
+            let cellProduct =
+            tableView.dequeueReusableCell(withIdentifier: "item") as! ProuductCell
 
-        // Configure the cell...
 
-        return cell
-            
-        } else{
-            let cell =
-            tableView.dequeueReusableCell(withIdentifier: "item") as!ProuductCell
-            
-            return cell
+
+            cellProduct.title.text = items[indexPath.row].title
+            cellProduct.Description.text = items[indexPath.row].Description
+            cellProduct.cost.text = String(items[indexPath.row].cost)
+            cellProduct.imges.image = items[indexPath.row].imges
+
+            return cellProduct
         }
     }
-
-    /*
-    // Override to support conditional editing of the table view.
-    override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
-        // Return false if you do not want the specified item to be editable.
-        return true
-    }
-    */
-
-    /*
-    // Override to support editing the table view.
-    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
-        if editingStyle == .delete {
-            // Delete the row from the data source
-            tableView.deleteRows(at: [indexPath], with: .fade)
-        } else if editingStyle == .insert {
-            // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-        }    
-    }
-    */
-
-    /*
-    // Override to support rearranging the table view.
-    override func tableView(_ tableView: UITableView, moveRowAt fromIndexPath: IndexPath, to: IndexPath) {
-
-    }
-    */
-
-    /*
-    // Override to support conditional rearranging of the table view.
-    override func tableView(_ tableView: UITableView, canMoveRowAt indexPath: IndexPath) -> Bool {
-        // Return false if you do not want the item to be re-orderable.
-        return true
-    }
-    */
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
-
 }
+

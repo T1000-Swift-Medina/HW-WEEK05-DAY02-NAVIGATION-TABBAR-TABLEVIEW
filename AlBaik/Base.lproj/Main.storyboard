@@ -12,7 +12,7 @@
         <scene sceneID="Es7-af-6Vy">
             <objects>
                 <tableViewController id="VZr-KV-OdS" customClass="Restraunat" customModule="AlBaik" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="BC9-PW-jm9">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" estimatedSectionHeaderHeight="-1" sectionFooterHeight="18" estimatedSectionFooterHeight="-1" id="BC9-PW-jm9">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -77,16 +77,25 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="AlBaik" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dNp-wH-yWi">
-                                <rect key="frame" x="90" y="286" width="272" height="225"/>
+                            <imageView clipsSubviews="YES" clearsContextBeforeDrawing="NO" userInteractionEnabled="NO" alpha="0.29999999999999999" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="شعار" translatesAutoresizingMaskIntoConstraints="NO" id="nLT-3N-kVl">
+                                <rect key="frame" x="0.0" y="44" width="414" height="769"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="AlBaik" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PLa-CJ-8OJ">
+                                <rect key="frame" x="153" y="114" width="108" height="48"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="42"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="rxx-np-Va6"/>
                         <color key="backgroundColor" systemColor="systemGray2Color"/>
+                        <constraints>
+                            <constraint firstItem="rxx-np-Va6" firstAttribute="bottom" secondItem="nLT-3N-kVl" secondAttribute="bottom" id="HW5-kf-fcC"/>
+                            <constraint firstItem="nLT-3N-kVl" firstAttribute="leading" secondItem="rxx-np-Va6" secondAttribute="leading" id="hte-v2-zXM"/>
+                            <constraint firstItem="nLT-3N-kVl" firstAttribute="top" secondItem="rxx-np-Va6" secondAttribute="top" id="nl3-gJ-8rB"/>
+                            <constraint firstItem="rxx-np-Va6" firstAttribute="trailing" secondItem="nLT-3N-kVl" secondAttribute="trailing" id="qQI-jn-eKY"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Home" image="home" id="FQG-9J-GrJ"/>
                 </viewController>
@@ -164,6 +173,7 @@
         <image name="headphone-big" width="50" height="50"/>
         <image name="home" width="50" height="52"/>
         <image name="menubig" width="50" height="50"/>
+        <image name="شعار" width="213" height="237"/>
         <systemColor name="linkColor">
             <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
