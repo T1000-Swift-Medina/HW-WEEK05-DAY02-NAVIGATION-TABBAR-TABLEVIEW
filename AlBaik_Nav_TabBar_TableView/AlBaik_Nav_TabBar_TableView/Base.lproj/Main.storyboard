@@ -61,6 +61,7 @@
                     <navigationItem key="navigationItem" title="Menu" id="0U6-bA-eb2">
                         <barButtonItem key="leftBarButtonItem" title="Item" image="menu-small" id="kwL-wh-8dz">
                             <connections>
+                                <action selector="sideMenuOnClick:" destination="XEQ-AG-SDl" id="Wco-Ba-w08"/>
                                 <segue destination="eIB-yp-0H8" kind="show" id="qea-7c-eut"/>
                             </connections>
                         </barButtonItem>
@@ -81,7 +82,7 @@
         <!--Delivery Address-->
         <scene sceneID="35n-Sj-LJ5">
             <objects>
-                <viewController title="Delivery Address" id="eIB-yp-0H8" sceneMemberID="viewController">
+                <viewController title="Delivery Address" id="eIB-yp-0H8" customClass="SideMenu" customModule="AlBaik_Nav_TabBar_TableView" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="fTl-zS-afN">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -119,7 +120,7 @@
         <!--Status-->
         <scene sceneID="I0x-on-MC5">
             <objects>
-                <viewController title="Status" id="TfA-1T-uE1" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SupportId" title="Status" id="TfA-1T-uE1" customClass="Support" customModule="AlBaik_Nav_TabBar_TableView" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Iuv-ZY-Vn2">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

@@ -21,6 +21,8 @@ var item5 = Product(title: "Brost", details: "4 or 8 pieces chicken meals come w
 class MenuTableViewControllere: UITableViewController {
 
     var products = [Product]()
+    var badge = 0
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -93,9 +95,20 @@ class MenuTableViewControllere: UITableViewController {
     @objc
     func addBtnClicked (sender: UIButton) {
         print("Button index: \(sender.tag)")
-        performSegue(withIdentifier: "ShowID", sender: self)
+        badge += 1
+        let barItem = tabBarController?.tabBar.items
+        barItem?[1].badgeValue = String(badge)
         
     }
     
-
+    @IBAction func sideMenuOnClick(_ sender: UIBarButtonItem) {
+        
+        // create object
+        guard let supportVC = storyboard?.instantiateViewController(withIdentifier: "SideMenuId") else { return  }
+        
+        navigationController?.showDetailViewController(supportVC, sender: self)
+        
+//        self.navigationController(supportVC)
+    }
+    
 }

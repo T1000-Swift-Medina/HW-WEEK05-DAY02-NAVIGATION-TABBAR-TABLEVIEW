@@ -23,6 +23,8 @@
 		1B3745D427289D8100C51BF3 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B3745D327289D8100C51BF3 /* Product.swift */; };
 		1B3745D62728A21700C51BF3 /* ListProducts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B3745D52728A21700C51BF3 /* ListProducts.swift */; };
 		1B3745DA2728FB9800C51BF3 /* ProductShowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B3745D92728FB9800C51BF3 /* ProductShowViewController.swift */; };
+		1B3745DC2729355900C51BF3 /* Support.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B3745DB2729355900C51BF3 /* Support.swift */; };
+		1B3745DE2729358D00C51BF3 /* SideMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B3745DD2729358D00C51BF3 /* SideMenu.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +65,8 @@
 		1B3745D327289D8100C51BF3 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
 		1B3745D52728A21700C51BF3 /* ListProducts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListProducts.swift; sourceTree = "<group>"; };
 		1B3745D92728FB9800C51BF3 /* ProductShowViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductShowViewController.swift; sourceTree = "<group>"; };
+		1B3745DB2729355900C51BF3 /* Support.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Support.swift; sourceTree = "<group>"; };
+		1B3745DD2729358D00C51BF3 /* SideMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenu.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,6 +122,8 @@
 				1B37459F2728832C00C51BF3 /* Main.storyboard */,
 				1B3745D92728FB9800C51BF3 /* ProductShowViewController.swift */,
 				1B3745C9272893A500C51BF3 /* MenuTableViewControllere.swift */,
+				1B3745DB2729355900C51BF3 /* Support.swift */,
+				1B3745DD2729358D00C51BF3 /* SideMenu.swift */,
 				1B3745D52728A21700C51BF3 /* ListProducts.swift */,
 				1B3745D327289D8100C51BF3 /* Product.swift */,
 				1B3745CB272893FA00C51BF3 /* ProductCell.swift */,
@@ -289,6 +295,8 @@
 				1B3745D62728A21700C51BF3 /* ListProducts.swift in Sources */,
 				1B3745CA272893A500C51BF3 /* MenuTableViewControllere.swift in Sources */,
 				1B3745D427289D8100C51BF3 /* Product.swift in Sources */,
+				1B3745DC2729355900C51BF3 /* Support.swift in Sources */,
+				1B3745DE2729358D00C51BF3 /* SideMenu.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
