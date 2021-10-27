@@ -16,8 +16,8 @@
                 <rect key="frame" x="0.0" y="0.0" width="403" height="210"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Burger" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vws-QJ-WFY">
-                        <rect key="frame" x="134" y="46" width="125" height="21"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Burger" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vws-QJ-WFY">
+                        <rect key="frame" x="134" y="46" width="51.5" height="21"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
@@ -40,22 +40,23 @@
                             <constraint firstAttribute="width" constant="89" id="F2g-Yb-wzn"/>
                         </constraints>
                     </imageView>
-                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zSt-vE-P0d">
-                        <rect key="frame" x="247" y="77" width="145" height="43"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zSt-vE-P0d">
+                        <rect key="frame" x="281" y="77" width="111" height="26"/>
                         <state key="normal" title="Button"/>
                         <buttonConfiguration key="configuration" style="filled" title="وش ودك تطلب اليوم؟">
                             <fontDescription key="titleFontDescription" type="system" pointSize="10"/>
                         </buttonConfiguration>
                     </button>
                 </subviews>
-                <color key="backgroundColor" red="0.53333333329999999" green="0.87843137250000003" blue="0.93725490199999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                 <constraints>
                     <constraint firstItem="vws-QJ-WFY" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="46" id="7LY-mL-UnV"/>
                     <constraint firstItem="sSY-Mq-AEj" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="8AW-Tn-pXx"/>
                     <constraint firstItem="92B-sL-gjC" firstAttribute="top" secondItem="fzd-je-IV2" secondAttribute="bottom" constant="23" id="A7x-1Q-mV9"/>
                     <constraint firstItem="fzd-je-IV2" firstAttribute="top" secondItem="vws-QJ-WFY" secondAttribute="bottom" constant="14" id="ERC-G8-MYI"/>
                     <constraint firstItem="92B-sL-gjC" firstAttribute="leading" secondItem="sSY-Mq-AEj" secondAttribute="trailing" constant="29" id="Eid-Pp-gey"/>
+                    <constraint firstItem="zSt-vE-P0d" firstAttribute="top" secondItem="vws-QJ-WFY" secondAttribute="bottom" constant="10" id="Gha-zm-Pdq"/>
+                    <constraint firstAttribute="trailing" secondItem="zSt-vE-P0d" secondAttribute="trailing" constant="11" id="HmE-3l-qS2"/>
                     <constraint firstItem="fzd-je-IV2" firstAttribute="leading" secondItem="sSY-Mq-AEj" secondAttribute="trailing" constant="29" id="NDl-8u-o0A"/>
                     <constraint firstItem="vws-QJ-WFY" firstAttribute="leading" secondItem="sSY-Mq-AEj" secondAttribute="trailing" constant="29" id="Tk5-x9-bcR"/>
                     <constraint firstItem="sSY-Mq-AEj" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="41" id="ltY-ok-tJc"/>

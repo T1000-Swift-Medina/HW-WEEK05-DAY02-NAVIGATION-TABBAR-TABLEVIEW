@@ -47,13 +47,27 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="menubig" translatesAutoresizingMaskIntoConstraints="NO" id="F6D-0E-19M">
-                                <rect key="frame" x="138" y="282" width="138" height="146"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="download-1" translatesAutoresizingMaskIntoConstraints="NO" id="F6D-0E-19M">
+                                <rect key="frame" x="100" y="282" width="214" height="181"/>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="الطلبات" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BIg-vw-T0o">
+                                <rect key="frame" x="73" y="205" width="268" height="60"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="PHb-Jv-5ii"/>
                         <color key="backgroundColor" red="0.99607843139999996" green="0.89411764709999997" blue="0.25098039220000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="PHb-Jv-5ii" firstAttribute="bottom" secondItem="F6D-0E-19M" secondAttribute="bottom" constant="350" id="7Z5-sP-qjQ"/>
+                            <constraint firstItem="BIg-vw-T0o" firstAttribute="top" secondItem="PHb-Jv-5ii" secondAttribute="top" constant="117" id="GnE-Qz-FSg"/>
+                            <constraint firstItem="BIg-vw-T0o" firstAttribute="leading" secondItem="PHb-Jv-5ii" secondAttribute="leading" constant="73" id="MhI-A7-BUn"/>
+                            <constraint firstItem="F6D-0E-19M" firstAttribute="top" secondItem="PHb-Jv-5ii" secondAttribute="top" constant="194" id="Tev-Ok-wPt"/>
+                            <constraint firstItem="PHb-Jv-5ii" firstAttribute="trailing" secondItem="F6D-0E-19M" secondAttribute="trailing" constant="100" id="dJn-6b-NyK"/>
+                            <constraint firstItem="PHb-Jv-5ii" firstAttribute="trailing" secondItem="BIg-vw-T0o" secondAttribute="trailing" constant="73" id="wI4-Lp-W05"/>
+                            <constraint firstItem="F6D-0E-19M" firstAttribute="leading" secondItem="PHb-Jv-5ii" secondAttribute="leading" constant="100" id="yXy-US-UND"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="1xj-tb-SDi"/>
                 </viewController>
@@ -69,13 +83,27 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" image="headphone-big" translatesAutoresizingMaskIntoConstraints="NO" id="eKm-Lz-8CW">
-                                <rect key="frame" x="138" y="244" width="138" height="164"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" image="headphone-big" translatesAutoresizingMaskIntoConstraints="NO" id="eKm-Lz-8CW">
+                                <rect key="frame" x="138" y="259" width="138" height="182"/>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="الدعم الفني" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L50-yB-xtS">
+                                <rect key="frame" x="61" y="138" width="293" height="48"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="63R-Xd-1ig"/>
                         <color key="backgroundColor" red="0.99607843139999996" green="0.89411764709999997" blue="0.25098039220000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="63R-Xd-1ig" firstAttribute="bottom" secondItem="eKm-Lz-8CW" secondAttribute="bottom" constant="372" id="45s-IY-GmP"/>
+                            <constraint firstItem="63R-Xd-1ig" firstAttribute="trailing" secondItem="L50-yB-xtS" secondAttribute="trailing" constant="60" id="7Dz-Tq-GX8"/>
+                            <constraint firstItem="eKm-Lz-8CW" firstAttribute="top" secondItem="63R-Xd-1ig" secondAttribute="top" constant="171" id="J5Z-gv-xUt"/>
+                            <constraint firstItem="L50-yB-xtS" firstAttribute="top" secondItem="63R-Xd-1ig" secondAttribute="top" constant="50" id="NWu-Xy-cPp"/>
+                            <constraint firstItem="eKm-Lz-8CW" firstAttribute="leading" secondItem="63R-Xd-1ig" secondAttribute="leading" constant="138" id="j02-LR-xwM"/>
+                            <constraint firstItem="63R-Xd-1ig" firstAttribute="trailing" secondItem="eKm-Lz-8CW" secondAttribute="trailing" constant="138" id="sEV-gy-30v"/>
+                            <constraint firstItem="L50-yB-xtS" firstAttribute="leading" secondItem="63R-Xd-1ig" secondAttribute="leading" constant="61" id="swr-2H-S9D"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="ZLQ-BK-LKJ"/>
                 </viewController>
@@ -149,10 +177,10 @@
     </scenes>
     <resources>
         <image name="D_LvD5mXsAEVFKW" width="2070" height="1510"/>
+        <image name="download-1" width="256" height="197"/>
         <image name="headphone-big" width="50" height="50"/>
         <image name="home" width="50" height="52"/>
         <image name="menu-small" width="22" height="22"/>
-        <image name="menubig" width="50" height="50"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

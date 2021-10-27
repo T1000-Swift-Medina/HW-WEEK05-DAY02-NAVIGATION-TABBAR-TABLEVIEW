@@ -9,7 +9,10 @@ import UIKit
 
 class TableViewCell1: UITableViewCell {
 
+ 
 
+   
+    
     @IBOutlet weak var lmogo: UIImageView!
     @IBOutlet weak var Label1: UILabel!
     
