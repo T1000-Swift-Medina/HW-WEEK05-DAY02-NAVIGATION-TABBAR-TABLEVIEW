@@ -9,21 +9,31 @@
 /* Begin PBXBuildFile section */
 		AC9763BB2726CE2F00797D20 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9763BA2726CE2F00797D20 /* AppDelegate.swift */; };
 		AC9763BD2726CE2F00797D20 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9763BC2726CE2F00797D20 /* SceneDelegate.swift */; };
-		AC9763BF2726CE2F00797D20 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9763BE2726CE2F00797D20 /* ViewController.swift */; };
 		AC9763C22726CE2F00797D20 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC9763C02726CE2F00797D20 /* Main.storyboard */; };
 		AC9763C42726CE3000797D20 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC9763C32726CE3000797D20 /* Assets.xcassets */; };
 		AC9763C72726CE3000797D20 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC9763C52726CE3000797D20 /* LaunchScreen.storyboard */; };
+		AC9763F92727EBFC00797D20 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9763F82727EBFC00797D20 /* TableViewController.swift */; };
+		AC9764022727ED0D00797D20 /* bannerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9764002727ED0D00797D20 /* bannerCell.swift */; };
+		AC9764032727ED0D00797D20 /* bannerCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AC9764012727ED0D00797D20 /* bannerCell.xib */; };
+		AC9764062727ED7B00797D20 /* products.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9764042727ED7B00797D20 /* products.swift */; };
+		AC9764072727ED7B00797D20 /* products.xib in Resources */ = {isa = PBXBuildFile; fileRef = AC9764052727ED7B00797D20 /* products.xib */; };
+		AC9764092727EFB400797D20 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9764082727EFB400797D20 /* ViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		AC9763B72726CE2F00797D20 /* albaik2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = albaik2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC9763BA2726CE2F00797D20 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AC9763BC2726CE2F00797D20 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		AC9763BE2726CE2F00797D20 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		AC9763C12726CE2F00797D20 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AC9763C32726CE3000797D20 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AC9763C62726CE3000797D20 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AC9763C82726CE3000797D20 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AC9763F82727EBFC00797D20 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		AC9764002727ED0D00797D20 /* bannerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = bannerCell.swift; sourceTree = "<group>"; };
+		AC9764012727ED0D00797D20 /* bannerCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = bannerCell.xib; sourceTree = "<group>"; };
+		AC9764042727ED7B00797D20 /* products.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = products.swift; sourceTree = "<group>"; };
+		AC9764052727ED7B00797D20 /* products.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = products.xib; sourceTree = "<group>"; };
+		AC9764082727EFB400797D20 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,10 +68,15 @@
 			children = (
 				AC9763BA2726CE2F00797D20 /* AppDelegate.swift */,
 				AC9763BC2726CE2F00797D20 /* SceneDelegate.swift */,
-				AC9763BE2726CE2F00797D20 /* ViewController.swift */,
+				AC9764082727EFB400797D20 /* ViewController.swift */,
+				AC9764002727ED0D00797D20 /* bannerCell.swift */,
+				AC9764042727ED7B00797D20 /* products.swift */,
+				AC9764052727ED7B00797D20 /* products.xib */,
+				AC9764012727ED0D00797D20 /* bannerCell.xib */,
 				AC9763C02726CE2F00797D20 /* Main.storyboard */,
 				AC9763C32726CE3000797D20 /* Assets.xcassets */,
 				AC9763C52726CE3000797D20 /* LaunchScreen.storyboard */,
+				AC9763F82727EBFC00797D20 /* TableViewController.swift */,
 				AC9763C82726CE3000797D20 /* Info.plist */,
 			);
 			path = albaik2;
@@ -126,6 +141,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				AC9763C72726CE3000797D20 /* LaunchScreen.storyboard in Resources */,
+				AC9764072727ED7B00797D20 /* products.xib in Resources */,
+				AC9764032727ED0D00797D20 /* bannerCell.xib in Resources */,
 				AC9763C42726CE3000797D20 /* Assets.xcassets in Resources */,
 				AC9763C22726CE2F00797D20 /* Main.storyboard in Resources */,
 			);
@@ -138,9 +155,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AC9763BF2726CE2F00797D20 /* ViewController.swift in Sources */,
+				AC9764092727EFB400797D20 /* ViewController.swift in Sources */,
+				AC9764062727ED7B00797D20 /* products.swift in Sources */,
+				AC9764022727ED0D00797D20 /* bannerCell.swift in Sources */,
 				AC9763BB2726CE2F00797D20 /* AppDelegate.swift in Sources */,
 				AC9763BD2726CE2F00797D20 /* SceneDelegate.swift in Sources */,
+				AC9763F92727EBFC00797D20 /* TableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
