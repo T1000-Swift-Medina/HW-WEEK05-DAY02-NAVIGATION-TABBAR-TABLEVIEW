@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ProductID" rowHeight="114" id="KGk-i7-Jjw" customClass="ProductCell" customModule="HWbaik" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="419" height="114"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="419" height="114"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="cheese-burger (1)" translatesAutoresizingMaskIntoConstraints="NO" id="zVs-3x-xPa">
+                        <rect key="frame" x="13" y="7" width="80" height="95"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="70" id="4kY-nu-yhd"/>
+                            <constraint firstAttribute="width" constant="70" id="wU2-CJ-yAS"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Burger" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T41-0i-O5k">
+                        <rect key="frame" x="101" y="13" width="54.5" height="20.5"/>
+                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Delicious and tasty with cheese" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="THo-iS-Gqo">
+                        <rect key="frame" x="101" y="40" width="305" height="20.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nq7-SU-zng">
+                        <rect key="frame" x="329" y="73" width="70" height="29"/>
+                        <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="70" id="7V5-uC-hQI"/>
+                            <constraint firstAttribute="height" constant="39" id="mjl-ub-Zjf"/>
+                        </constraints>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <state key="normal" title="Button"/>
+                        <buttonConfiguration key="configuration" style="tinted" title="Add"/>
+                        <connections>
+                            <action selector="OnAddToCart:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="E6I-hz-0eI"/>
+                        </connections>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Cost 50.0$" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PsF-kf-bo3">
+                        <rect key="frame" x="101" y="75" width="131" height="21"/>
+                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" red="0.77802258729999996" green="0.041117601099999998" blue="0.011649422350000001" alpha="0.2804501072690051" colorSpace="custom" customColorSpace="sRGB"/>
+                <constraints>
+                    <constraint firstItem="PsF-kf-bo3" firstAttribute="leading" secondItem="THo-iS-Gqo" secondAttribute="leading" id="2yp-Cx-oTc"/>
+                    <constraint firstItem="T41-0i-O5k" firstAttribute="leading" secondItem="zVs-3x-xPa" secondAttribute="trailing" constant="31" id="4eo-3Z-vUU"/>
+                    <constraint firstAttribute="trailing" secondItem="THo-iS-Gqo" secondAttribute="trailing" id="8ZU-Bi-j7s"/>
+                    <constraint firstItem="Nq7-SU-zng" firstAttribute="leading" secondItem="PsF-kf-bo3" secondAttribute="trailing" constant="84" id="9rj-qN-rEn"/>
+                    <constraint firstAttribute="trailing" secondItem="Nq7-SU-zng" secondAttribute="trailing" constant="20" symbolic="YES" id="FcD-VH-hwQ"/>
+                    <constraint firstItem="zVs-3x-xPa" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="GBN-a1-0BU"/>
+                    <constraint firstItem="Nq7-SU-zng" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="68" id="Rq3-fw-TE9"/>
+                    <constraint firstItem="PsF-kf-bo3" firstAttribute="top" secondItem="THo-iS-Gqo" secondAttribute="bottom" constant="12" id="SF9-OZ-18R"/>
+                    <constraint firstItem="T41-0i-O5k" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="13" id="UtY-1o-YMW"/>
+                    <constraint firstItem="THo-iS-Gqo" firstAttribute="top" secondItem="T41-0i-O5k" secondAttribute="bottom" constant="8" symbolic="YES" id="ZJH-49-UbB"/>
+                    <constraint firstItem="zVs-3x-xPa" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="7" id="eBa-vH-vsy"/>
+                    <constraint firstItem="THo-iS-Gqo" firstAttribute="leading" secondItem="T41-0i-O5k" secondAttribute="leading" id="ggL-UO-Pdn"/>
+                    <constraint firstItem="zVs-3x-xPa" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="13" id="jY2-17-JQl"/>
+                    <constraint firstItem="zVs-3x-xPa" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="13" id="yho-53-2ax"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="Details" destination="THo-iS-Gqo" id="dKX-1C-Tdv"/>
+                <outlet property="Price" destination="PsF-kf-bo3" id="ist-QV-Lpw"/>
+                <outlet property="Title" destination="T41-0i-O5k" id="Kbt-eh-UvQ"/>
+                <outlet property="imaItem" destination="zVs-3x-xPa" id="wnE-dH-M4a"/>
+            </connections>
+            <point key="canvasLocation" x="148.55072463768118" y="104.46428571428571"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="cheese-burger (1)" width="50" height="50"/>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
