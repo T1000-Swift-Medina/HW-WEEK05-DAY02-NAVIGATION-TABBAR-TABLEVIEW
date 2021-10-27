@@ -9,21 +9,29 @@
 /* Begin PBXBuildFile section */
 		C02173CE2728557200216B68 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C02173CD2728557200216B68 /* AppDelegate.swift */; };
 		C02173D02728557200216B68 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C02173CF2728557200216B68 /* SceneDelegate.swift */; };
-		C02173D22728557200216B68 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C02173D12728557200216B68 /* ViewController.swift */; };
 		C02173D52728557200216B68 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C02173D32728557200216B68 /* Main.storyboard */; };
 		C02173D72728557400216B68 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C02173D62728557400216B68 /* Assets.xcassets */; };
 		C02173DA2728557400216B68 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C02173D82728557400216B68 /* LaunchScreen.storyboard */; };
+		C02173EB27285E2E00216B68 /* Menu.swift in Sources */ = {isa = PBXBuildFile; fileRef = C02173E927285E2E00216B68 /* Menu.swift */; };
+		C02173EC27285E2E00216B68 /* Menu.xib in Resources */ = {isa = PBXBuildFile; fileRef = C02173EA27285E2E00216B68 /* Menu.xib */; };
+		C02173EF27285E4200216B68 /* Banner.swift in Sources */ = {isa = PBXBuildFile; fileRef = C02173ED27285E4200216B68 /* Banner.swift */; };
+		C02173F027285E4200216B68 /* Banner.xib in Resources */ = {isa = PBXBuildFile; fileRef = C02173EE27285E4200216B68 /* Banner.xib */; };
+		C02173F227285E6000216B68 /* Resturant.swift in Sources */ = {isa = PBXBuildFile; fileRef = C02173F127285E6000216B68 /* Resturant.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		C02173CA2728557200216B68 /* Mcdonalds.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Mcdonalds.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C02173CD2728557200216B68 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C02173CF2728557200216B68 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		C02173D12728557200216B68 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		C02173D42728557200216B68 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C02173D62728557400216B68 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C02173D92728557400216B68 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C02173DB2728557400216B68 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C02173E927285E2E00216B68 /* Menu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Menu.swift; sourceTree = "<group>"; };
+		C02173EA27285E2E00216B68 /* Menu.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Menu.xib; sourceTree = "<group>"; };
+		C02173ED27285E4200216B68 /* Banner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Banner.swift; sourceTree = "<group>"; };
+		C02173EE27285E4200216B68 /* Banner.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Banner.xib; sourceTree = "<group>"; };
+		C02173F127285E6000216B68 /* Resturant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Resturant.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,11 +66,15 @@
 			children = (
 				C02173CD2728557200216B68 /* AppDelegate.swift */,
 				C02173CF2728557200216B68 /* SceneDelegate.swift */,
-				C02173D12728557200216B68 /* ViewController.swift */,
 				C02173D32728557200216B68 /* Main.storyboard */,
+				C02173F127285E6000216B68 /* Resturant.swift */,
 				C02173D62728557400216B68 /* Assets.xcassets */,
 				C02173D82728557400216B68 /* LaunchScreen.storyboard */,
 				C02173DB2728557400216B68 /* Info.plist */,
+				C02173E927285E2E00216B68 /* Menu.swift */,
+				C02173EA27285E2E00216B68 /* Menu.xib */,
+				C02173ED27285E4200216B68 /* Banner.swift */,
+				C02173EE27285E4200216B68 /* Banner.xib */,
 			);
 			path = Mcdonalds;
 			sourceTree = "<group>";
@@ -127,6 +139,8 @@
 			files = (
 				C02173DA2728557400216B68 /* LaunchScreen.storyboard in Resources */,
 				C02173D72728557400216B68 /* Assets.xcassets in Resources */,
+				C02173F027285E4200216B68 /* Banner.xib in Resources */,
+				C02173EC27285E2E00216B68 /* Menu.xib in Resources */,
 				C02173D52728557200216B68 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -138,7 +152,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C02173D22728557200216B68 /* ViewController.swift in Sources */,
+				C02173EB27285E2E00216B68 /* Menu.swift in Sources */,
+				C02173EF27285E4200216B68 /* Banner.swift in Sources */,
+				C02173F227285E6000216B68 /* Resturant.swift in Sources */,
 				C02173CE2728557200216B68 /* AppDelegate.swift in Sources */,
 				C02173D02728557200216B68 /* SceneDelegate.swift in Sources */,
 			);
