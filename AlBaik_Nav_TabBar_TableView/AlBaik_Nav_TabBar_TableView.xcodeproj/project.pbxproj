@@ -22,6 +22,7 @@
 		1B3745D227289C2900C51BF3 /* BannerCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1B3745D027289C2900C51BF3 /* BannerCell.xib */; };
 		1B3745D427289D8100C51BF3 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B3745D327289D8100C51BF3 /* Product.swift */; };
 		1B3745D62728A21700C51BF3 /* ListProducts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B3745D52728A21700C51BF3 /* ListProducts.swift */; };
+		1B3745DA2728FB9800C51BF3 /* ProductShowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B3745D92728FB9800C51BF3 /* ProductShowViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +62,7 @@
 		1B3745D027289C2900C51BF3 /* BannerCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BannerCell.xib; sourceTree = "<group>"; };
 		1B3745D327289D8100C51BF3 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
 		1B3745D52728A21700C51BF3 /* ListProducts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListProducts.swift; sourceTree = "<group>"; };
+		1B3745D92728FB9800C51BF3 /* ProductShowViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductShowViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +116,7 @@
 				1B3745992728832C00C51BF3 /* AppDelegate.swift */,
 				1B37459B2728832C00C51BF3 /* SceneDelegate.swift */,
 				1B37459F2728832C00C51BF3 /* Main.storyboard */,
+				1B3745D92728FB9800C51BF3 /* ProductShowViewController.swift */,
 				1B3745C9272893A500C51BF3 /* MenuTableViewControllere.swift */,
 				1B3745D52728A21700C51BF3 /* ListProducts.swift */,
 				1B3745D327289D8100C51BF3 /* Product.swift */,
@@ -281,6 +284,7 @@
 				1B37459A2728832C00C51BF3 /* AppDelegate.swift in Sources */,
 				1B3745D127289C2900C51BF3 /* BannerCell.swift in Sources */,
 				1B3745CD272893FA00C51BF3 /* ProductCell.swift in Sources */,
+				1B3745DA2728FB9800C51BF3 /* ProductShowViewController.swift in Sources */,
 				1B37459C2728832C00C51BF3 /* SceneDelegate.swift in Sources */,
 				1B3745D62728A21700C51BF3 /* ListProducts.swift in Sources */,
 				1B3745CA272893A500C51BF3 /* MenuTableViewControllere.swift in Sources */,
