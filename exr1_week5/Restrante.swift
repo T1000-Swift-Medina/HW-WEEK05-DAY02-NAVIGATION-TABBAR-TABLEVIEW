@@ -73,7 +73,7 @@ class Restrante: UITableViewController {
             
             cellProduct.title.text = item[indexPath.row].title
             cellProduct.details.text = item[indexPath.row].details
-            cellProduct.price.text = "Cost \(item[indexPath.row].cost) S.R"
+            cellProduct.price.text = " \(item[indexPath.row].cost) SR"
             cellProduct.imgItem.image = item[indexPath.row].imgProduct
             
         return cellProduct

@@ -16,10 +16,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="AlBaik" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gen-y5-sXe">
-                                <rect key="frame" x="162" y="336" width="87" height="35"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="AlBaik" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gen-y5-sXe">
+                                <rect key="frame" x="135" y="336" width="145" height="91"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="29"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="43"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -31,7 +31,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-523" y="836"/>
+            <point key="canvasLocation" x="-523.1884057971015" y="835.71428571428567"/>
         </scene>
         <!--Menu-->
         <scene sceneID="Mbu-DB-Roe">
@@ -141,8 +141,8 @@
                         <color key="backgroundColor" red="1" green="0.96667445569999999" blue="0.067055461019999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </tabBar>
                     <connections>
-                        <segue destination="Pxf-t6-idL" kind="relationship" relationship="viewControllers" id="4XN-8Y-DBO"/>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="hoF-Qe-yU1"/>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="1DK-DW-p8u"/>
+                        <segue destination="Pxf-t6-idL" kind="relationship" relationship="viewControllers" id="MvX-Mm-0bW"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aij-nn-TbU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

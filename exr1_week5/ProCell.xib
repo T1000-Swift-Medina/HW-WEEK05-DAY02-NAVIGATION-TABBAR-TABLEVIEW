@@ -50,12 +50,17 @@
                     </label>
                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qzd-yf-QVZ">
                         <rect key="frame" x="265" y="100" width="66" height="39"/>
+                        <color key="backgroundColor" red="1" green="0.96667445569999999" blue="0.067055461019999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstAttribute="width" constant="66" id="I2y-2V-Dxr"/>
                             <constraint firstAttribute="height" constant="39" id="NeD-wn-PyT"/>
                         </constraints>
+                        <color key="tintColor" red="1" green="0.96667445569999999" blue="0.067055461019999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <state key="normal" title="Button"/>
-                        <buttonConfiguration key="configuration" style="gray" title="Add "/>
+                        <buttonConfiguration key="configuration" style="gray" title="Add " titleAlignment="center">
+                            <fontDescription key="titleFontDescription" type="boldSystem" pointSize="16"/>
+                            <color key="baseForegroundColor" systemColor="labelColor"/>
+                        </buttonConfiguration>
                         <connections>
                             <action selector="onAddToCart:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="k4r-xi-9AW"/>
                         </connections>
@@ -89,6 +94,9 @@
     </objects>
     <resources>
         <image name="heart.text.square" catalog="system" width="128" height="114"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
         <systemColor name="systemGray2Color">
             <color red="0.68235294117647061" green="0.68235294117647061" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
