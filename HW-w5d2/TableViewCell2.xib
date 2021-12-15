@@ -53,6 +53,7 @@
                         </connections>
                     </button>
                 </subviews>
+                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                 <constraints>
                     <constraint firstItem="OID-IQ-UEW" firstAttribute="centerY" secondItem="hPJ-JT-kTk" secondAttribute="centerY" id="2TJ-8f-Jpl"/>
                     <constraint firstItem="hPJ-JT-kTk" firstAttribute="top" secondItem="KfY-cy-BQS" secondAttribute="bottom" constant="19" id="DeP-t2-ccM"/>

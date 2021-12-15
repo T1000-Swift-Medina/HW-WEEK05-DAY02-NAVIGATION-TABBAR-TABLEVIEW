@@ -17,6 +17,7 @@ class TableViewCell2: UITableViewCell {
     @IBOutlet weak var cost: UILabel!
     
     @IBAction func btn(_ sender: Any) {
+        
     }
     
 
@@ -30,5 +31,5 @@ class TableViewCell2: UITableViewCell {
 
         // Configure the view for the selected state
     }
-    
 }
+
